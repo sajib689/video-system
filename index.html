@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <div class="player">
+        <video class="player__video viewer" src="./sura.mp4" ></video>
+        <div class="player__controls">
+            <div class="progress">
+                <div class="progress-filed"></div>
+            </div>
+            <button  class="plalyer__button toggle" title="Toggle Play">Pause</button>
+            <input type="range" name="volume" class="player__slider"
+            min="0" max="1" step="0.05" value="1" id="">
+            <button data-skip="10" class="plalyer__button"> <<10s </button>
+            <button data-skip="25" class="plalyer__button"> 25s>> </button>
+        </div>
+    </div>
+    <style>
+       
+        .player__video{
+            width: 500px;
+        }
+    </style>
+    <script src="./app.js"></script>
+</body>
+</html>
